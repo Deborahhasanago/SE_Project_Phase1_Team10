@@ -1,4 +1,4 @@
-##Software Engineering - CEN 302 | PROJECT SPRING 2024
+Software Engineering - CEN 302 | PROJECT SPRING 2024
 
 ##Phase I: Group Division - Team 10
 
