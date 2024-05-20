@@ -48,7 +48,7 @@ patient information and appointments. It will have functions including patient r
 appointment scheduling, secure staff logins with role-based access, and electronic health
 records functionality for secure data storage.
 
-Features and Technologies:
+**Features and Technologies:**
 User-friendly interface: designed in a way that it is easy to navigate and operate.
 Centralized dashboard: Customized overviews for the admin and psychologist which
 enables easy and rapid access.
@@ -56,20 +56,20 @@ Automation of Patient Management: Reduction of human error and real-time
 information update.
 Role-based access to ensure data security and storage
 
-Limitations:
+**Limitations:**
 Adaptation of users: Getting past any resistance to change from clinic personnel and
 patients may be challenging. Sufficient training and assistance are going to be required
 to ensure the successful implementation of the new system.
 
-Compliance with regulations: Following to privacy laws and healthcare compliance
+**Compliance with regulations:** Following to privacy laws and healthcare compliance
 requirements complicates matters and may limit some functionality necessary to protect
 patient data from unauthorized access.
 
-Migration of data: Moving old patient information to the new system can be difficult
+**Migration of data:** Moving old patient information to the new system can be difficult
 and time-consuming. Maintaining patient care continuity requires ensuring data
 correctness and integrity throughout migration.
 
-Unexpected Technical Issues: Unexpected technical difficulties, like bugs in software
+**Unexpected Technical Issues:** Unexpected technical difficulties, like bugs in software
 or system failures, may affect the operation of the website.
 Boundaries:
 The training and support of users: The accessibility and efficacy of training tools may
