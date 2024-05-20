@@ -140,37 +140,37 @@ successful solution for a psychiatric
 
 a. Stakeholders:
 
-** End-Users:**
+**End-Users:**
 Patients: People looking for psychological services who will use the website to make
 appointments.
 
-** Clinicians and Staff: ** This website will be used by psychologists, therapists, administrative staff,
+**Clinicians and Staff:** This website will be used by psychologists, therapists, administrative staff,
 and other healthcare professionals to handle patient information, schedules, and communications.
 Clinical Management: Clinic administrators are decision-makers and managers in charge of
 overseeing clinic operations, including the website&#39;s development and use.
 
-Developers and IT team: Web developers are in charge of designing, building, and
+**Developers and IT team:** Web developers are in charge of designing, building, and
 maintaining the website&#39;s technical infrastructure, user experience, and functioning.
 
-IT assistance: Personnel who provide technical assistance, troubleshooting, and maintenance for
+**IT assistance:** Personnel who provide technical assistance, troubleshooting, and maintenance for
 the website and its connected systems.
 
-III. User Stories:
- Story: Appointment Scheduling (End User)
+# III. User Stories:
+**Story: Appointment Scheduling (End User)**
 Patient: End-User
 - Requirement: A patient,  would like to have the ability able to plan appointments
 online so that I may select convenient times.
 - Benefit: This tool enables patients to view clinic availability, pick preferred
 appointment times, and receive automated reminders, resulting in increased
 appointment adherence and greater patient-clinician contact.
- Story: Clinical Assessment Entry (Clinician)
+**Story: Clinical Assessment Entry (Clinician)**
 User Type: Clinician
 - Requirements: As a clinician, I must electronically document and modify clinical
 evaluations, and treatment plans to keep patient records complete and structured.
 - Benefit: This feature increases documentation efficiency, facilitates clinician
 collaboration, supports evidence-based treatment decisions, and assures compliance with
 regulatory standards.
- Story: Appointment Management for Clinicians
+**Story: Appointment Management for Clinicians**
 User type:  Administrator
 - Requirement: As a clinician, I want to be able to check my schedule, and organize
 appointments or changes to optimize time management and patient care coordination.
@@ -178,7 +178,7 @@ appointments or changes to optimize time management and patient care coordinat
 calendars, eliminate no-shows with automatic notifications, and prioritize the treatment of
 patients based on real-time changes and availability.
 
-IV. Functional Requirements:
+# IV. Functional Requirements:
 
 a. Brief Description:
 1. Enable Patients to Schedule Appointments Online: Patients may easily arrange
@@ -205,12 +205,7 @@ Appointment scheduling:
  Create an appointment booking interface that allows clients to book appointments.
  Include a calendar option for choosing appointment times and dates.
  Verify appointment requests to avoid scheduling conflicts.
- Implement notifications for both patients and administrators after an appointment is
-successfully scheduled.
  Allow administrators to approve and reschedule appointments as needed.
-Patient Dashboard:
- Create a patient dashboard that allows patients to check their arranged appointments and
-medical information.
  Implementing authentication and access controls will help to ensure data privacy and
 security.
 Administrative Dashboard: (admin/clinician)
@@ -219,7 +214,7 @@ information, appointments, etc.
  Add role-based access control to limit specific functions to only authorized
 administrators.
 
-V. Non-Functional Requirements:
+# V. Non-Functional Requirements:
 a. Brief Description:
 - Efficiency: It should function rapidly and without interruption, allowing patients to make
 appointments conveniently and professionals to find and modify patient information
@@ -242,9 +237,10 @@ security audits to find and address holes quickly.
 - Accuracy Goal: Keep data accurate by checking input fields, issuing error warnings for
 invalid entries, and maintaining databases frequently to include the most recent data.
 
-VI. Application Specifications:
+# VI. Application Specifications:
 
-a. Architecture:
+**a. Architecture:**
+
 
 b. Database Model:
 ER DIAGRAM
@@ -264,10 +260,7 @@ d. User Interface Design:
 - Description of the user interfaces:
 
 1. Patient interface:
-- Dashboard: When patients log in, they are welcomed with a personalized dashboard that
-displays future appointments, and rapid access to medical records.
-- Appointment Booking: An easy calendar display allows patients to effortlessly plan,
-reschedule, and cancel appointments. They can also see available time slots.
+- Appointment Booking: An easy form display allows patients to effortlessly plan.
 
 2. Clinician Interaction:
 - Dashboard: Clinicians have a full dashboard that shows patient appointments and their
@@ -282,9 +275,7 @@ materials (e.g., test results and scans).
 3. Administrative Interface:
 - Dashboard: Admins have a dashboard that shows patient appointments and their medical
 history.
-- Appointment Scheduling: Administrators monitor clinic availability, assign clinicians to
-appointments, and resolve scheduling issues. They can also create reports on appointment
-data and clinic performance.
+- Appointment Scheduling: Administrators monitor clinic availability.
 - Access to patient medical overview: they can manage and modify registered patient.
 
 4. Login/Register Interface
@@ -302,3 +293,67 @@ avoid breaching the database.
 password to access the system.
 3. Role-based access: Utilising role-based mechanisms based on the user roles to ensure restricted
 access of specific functions and data.
+
+
+## Phase III: Software Design and Modeling
+
+## Deadline: April 1st, 2024, 23:59
+
+# Software Design and Modeling
+# Group Name: Team 10 Deborah Hasanago
+**I. Software Architecture:**
+The system is built for the sole purpose of streamlining patient data and automating manual
+processes, which will ensure efficiency, enhance security and reliability, and make
+communication between patients and the clinic staff more practical. The system&#39;s unified
+architecture enables a user-friendly interface, reliable data management, easy integration, and
+data-driven choices to ensure efficient clinic management and patient satisfaction.
+a) User management and authentication interfaces ensure role-based access to different
+parts of the system to protect the privacy of the patient data. There are three types of
+user authentication: administrator, clinician, and patient. Authentication techniques use
+encrypted credentials along with safe authentication methods to verify users&#39; identities
+upon login. Each user will have access to their assigned interface which will contain a
+dashboard and home page where they can perform specific actions.
+
+b) The patient management is the interface reserved for the patient upon login. Each patient can book appointments.
+The database securely stores and manages patient data, such as their medical history, treatment plans,
+diagnoses, and prescriptions.
+c) The administrator /clinician login will be reserved for the staff of the clinic. They will be
+able to overview appointments and manage them via a personalized dashboard. Another
+feature of the admin/staff interface will be the patient EHRs. They will have access to
+reviewing medical history, creating treatment plans, and prescribing medications. EHR
+data is formatted and arranged in the database to ensure security, integrity of data, and
+conformity to regulations.
+
+
+II. Component Diagram:
+
+III. Detailed Design:
+
+a) Class Diagram:
+
+b) Sequence Diagrams:
+
+c) Database Model:
+
+**Effective Data Structure:**
+1. Normalization: To cut down on redundancy and guarantee data integrity, the
+database schema is created using normalization techniques. To prevent duplicate
+patient data in different tables, for instance, patient details are kept in the Patients
+Table and connected to appointments and EHRs using foreign keys.
+2. Indexes: To enhance query performance and data retrieval speed, indexes are
+established on frequently searched columns (such as PatientID, AppointmentID,
+and ClinicianID).
+3. Data Integrity Restrictions: To provide referential security, foreign key
+constraints are utilized to avoid abandoned records and to sustain data
+connections between tables.
+4. Optimized Queries: SQL queries that are used to get, update, or remove data are
+made as efficient as possible by utilizing the right joins, filters, and indexes to
+reduce resource usage and enhance database performance in general.
+
+# IV. Modeling:
+
+a) Case Diagram:
+
+b) Activity Diagram:
+
+c) State Diagrams:
