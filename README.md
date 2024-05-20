@@ -6,7 +6,7 @@
 https://github.com/Deborahhasanago/SE_Project_Phase1_Team10
 
 # THE README FILE LINK:
-/Deborahhasanago/SE_Project_Phase1_Team10/blob/main/README.md
+[/Deborahhasanago/SE_Project_Phase1_Team10/blob/main/README.md](https://github.com/Deborahhasanago/SE_Project_Phase1_Team10/blob/main/README.md)
 
 ## I. TEAM MEMBERS:
 - Deborah Hasanago (LEADER): GitHub Username [Deborahhasanago] | email:
