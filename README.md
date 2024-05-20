@@ -1,17 +1,17 @@
-Software Engineering - CEN 302 | PROJECT SPRING 2024
+## Software Engineering - CEN 302 | PROJECT SPRING 2024
 
-##Phase I: Group Division - Team 10
+## Phase I: Group Division - Team 10
 
-THE GITHUB REPOSITORY LINK:
+## THE GITHUB REPOSITORY LINK:
 https://github.com/Deborahhasanago/SE_Project_Phase1_Team10
 
-THE README FILE LINK:
+## THE README FILE LINK:
 https://github.com/Deborahhasanago/Deborahhasanago/tree/main
 
-I. TEAM MEMBERS:
+# I. TEAM MEMBERS:
 - Deborah Hasanago (LEADER): GitHub Username [Deborahhasanago] | email:
 deborahhasanago30@gmail.com
-II. ROLES AND TASKS:
+# II. ROLES AND TASKS:
 - It is an individual project and as the only member I am responsible for it.
 - The features I am responsible for:
 a. Login and Register Interface
@@ -19,18 +19,18 @@ b. Admin and Psychologist Interface
 c. Database
 d. Patient Details Management (part of the admin and psychologist and admin)
 
-III. TITLE OF THE PROJECT: Psychology Clinic Management Website
-IV. PROBLEM IDENTIFICATION: I met up with a friend of mine who had opened her own
+# III. TITLE OF THE PROJECT: Psychology Clinic Management Website
+# IV. PROBLEM IDENTIFICATION: I met up with a friend of mine who had opened her own
 Psychiatric Clinic. After some discussions, I came to know that she was facing problems with
 managing the records of her patients. As a newly opened business, the tools used to manage the
 patient were a record book by manually kept track of the patient details and appointments. She
 needed an efficient management system to keep track of her patients&#39; details and appointments.
-V. SOLUTION PROPOSAL: After some discussions, I suggested creating an interactive and user-
+# V. SOLUTION PROPOSAL: After some discussions, I suggested creating an interactive and user-
 friendly website where the admins and the psychologists can keep track of their patients and
 appointments in real time and where the information can be updated frequently.
- Features and Technologies:
- User-friendly interface: designed in a way that it is easy to navigate and operate.
- Centralized dashboard: Customized overviews for the admin and psychologist
+Features and Technologies:
+User-friendly interface: designed in a way that it is easy to navigate and operate.
+Centralized dashboard: Customized overviews for the admin and psychologist
 which enables easy and rapid access.
 
 Automation of Patient Management: Reduction of human error and real-time
@@ -43,7 +43,7 @@ Backend: PHP
 Frontend: JavaScript, HTML,CSS,Bootstrap
 Database: MySQL through xampp
 
-VI. PROJECT SCOPE: This project includes building a psychological clinic to efficiently manage
+# VI. PROJECT SCOPE: This project includes building a psychological clinic to efficiently manage
 patient information and appointments. It will have functions including patient registration,
 appointment scheduling, secure staff logins with role-based access, and electronic health
 records functionality for secure data storage.
@@ -118,4 +118,4 @@ Appointment Scheduling Interface: An interface that will manage the
 appointments by using a calendar view and being able to set the type of
 appointment, patient details, and the available psychologist.
 
-IX. SUBMISSION DEADLINE: 04.03.2024, 23:59 hours.
+# IX. SUBMISSION DEADLINE: 04.03.2024, 23:59 hours.
