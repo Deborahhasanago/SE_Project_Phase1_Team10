@@ -357,3 +357,142 @@ a) Case Diagram:
 b) Activity Diagram:
 
 c) State Diagrams:
+
+
+# PHASE VI: SOFTWARE TESTING
+
+## I. Introduction to Testing:
+
+a) The process of analyzing a software program to find flaws or errors is called software
+testing. Software testing occurs to make sure the program works as intended and satisfies
+requirements. Testing is running the program with the goal of identifying bugs,
+confirming that it functions as intended, and guaranteeing its dependability and quality.
+b) In software development, testing is essential since it
+- enhances software quality by finding vulnerabilities early.
+- improves functionality and user experience.
+- guarantees durability and avoids expensive mistakes.
+- verifies modifications and upholds accuracy over time.
+- increases stakeholder confidence.
+## II. Purpose of Testing:
+
+a) In software development, testing serves as a kind of safeguarding net, identifying
+possible problems before they become significant ones. It involves ensuring that every
+piece of code performs as intended and doesn&#39;t damage anything else. Testing, when done
+early and often during the development cycle, guarantees that the finished product
+satisfies criteria, operates dependably, and offers users a satisfying experience.
+III. Focus on Testing a Single Component:
+
+
+
+- Role in the System: Controlling how users interact with your application is mostly
+dependent on the redirect function. It manages redirects to alternative sites or URLs in
+response to specific events, including form submissions, authentication status, or user
+
+input. Thus, keeping a seamless and simple user experience depends on the redirect
+function functioning well.
+
+- Complexity: While the redirect function in and of itself may appear straightforward,
+there may be untested complexity in its implementation. For instance, you must confirm
+that the redirection header is appropriately sent to the browser and that the specified URL
+is legitimate.
+- Effect on the System: The application&#39;s behavior and functionality are directly affected
+by the redirect function. The function may cause usability problems, interrupted
+navigation flows, or even safety holes (such as open redirects) if it fails to correctly
+redirect users or sends inappropriate headers. By identifying and preventing such
+problems, testing reduces the possibility of system malfunctions or user unhappiness.
+IV. Preparing Test Cases:
+
+a) Normal Inputs:
+- Scenario: A valid URL and a legitimate status message are supplied to the redirect
+function.
+- Write a test scenario in which the function gets called with a standard status message
+and a known-good URL.
+- Anticipated Result: Confirm that the function sets the session status appropriately
+and redirects to the given URL.
+b) Edge Cases: 
+- Scenario: Examine the limits or very high thresholds for inputs that could result in
+strange behavior.
+- Test Case: Supply special characters in URLs, very long URLs, and empty status
+messages as edge case inputs.
+- Anticipated Result: Make sure the function can smoothly manage edge
+circumstances, such as cutting lengthy URLs or properly handling special characters,
+without crashing or resulting in unexpected outcomes.
+c) Invalid Inputs: 
+- Scenario: Evaluate the behavior of the function in the event that it receives invalid
+inputs, like a blank status message or a non-URL value.
+- Test Case: Give the function invalid inputs, like a blank status message or a string
+that isn&#39;t a URL.
+- Anticipated Result: Confirm that the function responds to invalid inputs in a suitable
+manner, such as by reporting the error, returning an error message, or failing
+gracefully without causing unexpected behavior.
+
+## V. Choosing Testing Frameworks:
+ For a php-written application, one of the most efficient and easy-to-use testing software is
+PHPUnit. It offers a wide range of assertion techniques, test case structuring, and test
+execution tools. It works well for testing particular PHP codebase pieces or components.
+It works well for testing certain PHP codebase pieces or components.
+ How to SetUp PHPUnit:
+- As a start you need to have a compatible php version downloaded to your PC.
+- Next, you need to download the PHPUnit Composer. It offers a wide range of
+assertion techniques, test case structuring, and test execution tools. It works well for
+testing particular PHP codebase pieces or components. Composer creates an
+autoloader for smooth incorporation into your PHP project for testing, installs
+PHPUnit and its dependencies, and maintains version compliance.
+- After that you need to download a PHPUnit that is not outdated or not supported to
+your PC.
+- Opening the command prompt you will provide the path of file where you want to
+test the component.
+- Using “require --dev phpunit/phpunit” you can install PHPUnit&#39;s most recent stable
+version that is appropriate for your project.
+- And you’re ready to test.
+
+## VI. Writing Test Code:
+Normal Input Scenario:
+
+It initiates a session, calls
+redirect with a URL and a
+status message, and checks
+that, following redirection,
+the session status has been
+updated correctly.
+
+Assertion: Following the
+redirection procedure, the
+assertEquals method
+confirms that the session
+state
+($_SESSION[&#39;status&#39;])
+corresponds to the
+requested status ($status).
+
+## VII. Running Tests:
+
+ Putting Tests into Practice:
+- Open the terminal of the directory where the test file is located.
+- Use the PHPUnit command to put your tests into action : vendor/bin/phpunit
+tests/functionTest.php
+
+a) Passing Test:
+
+b) Failing Test &amp;
+Error Scenarios
+- PHPUnit Testing by
+default doesn’t display
+messages for when a
+test is passed. It only
+notifies when there is a
+test failure and error
+incurring. In order to
+have a “TEST OK”
+message is green for a
+successful test you need
+to download a PHPUnit
+extension called
+DOXTYPE which I do not
+have on my PC.
+
+## VIII. Test Coverage
+High test coverage is beneficial for a number of reasons, including assisting in the identification
+of untested code paths, enhancing software maintainability, boosting confidence in the
+dependability of the codebase, reducing the risk of introducing regressions, and aligning with
+standard practices for quality control.
